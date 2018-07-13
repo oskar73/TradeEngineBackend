@@ -30,7 +30,7 @@ module.exports = (sequelize, Sequelize) => {
         {
             tableName: "symbol",
             freezeTableName: true,
-            timestamps: true,
+            timestamps: true, 
         }
     );
 
