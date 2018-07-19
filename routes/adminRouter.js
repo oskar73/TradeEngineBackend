@@ -36,6 +36,5 @@ router.post("/updateLeverage", adminmiddleware, adminControl.updateLeverage);
 router.post("/createLeverage", adminmiddleware, adminControl.createLeverage);
 router.post("/deleteLeverage", adminmiddleware, adminControl.deleteLeverage);
 
-router.get("/getPositions", adminmiddleware, adminControl.getPositions);
 
 module.exports = router;
