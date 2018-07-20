@@ -100,5 +100,5 @@ module.exports = (sequelize, Sequelize) => {
         // // }
     };
 
-    return User;
+    return User; 
 }
