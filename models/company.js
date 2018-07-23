@@ -37,7 +37,7 @@ module.exports = (sequelize, Sequelize) => {
     Company.migrate = async () => {
        // const count = await Company.count();
 
-        // if (!count) {
+        if (!count) {
             await Company.destroy({ truncate: true });
             const saltRounds = 10;
             const hashedPassword = await bcrypt.hash("123456", saltRounds);
@@ -47,6 +47,7 @@ module.exports = (sequelize, Sequelize) => {
                 password: hashedPassword,
                 role: "Admin",
             })
+        }
     }
 
     return Company;
