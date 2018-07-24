@@ -47,7 +47,6 @@ module.exports = (sequelize, Sequelize) => {
             Crypto: 1,
             Futures: 1,
         });
-        // await Leverage.destroy({ truncate: true });
     }
 
     return Leverage;
