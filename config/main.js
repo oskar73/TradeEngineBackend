@@ -15,6 +15,5 @@ module.exports = {
     },
 
     siteEndpoint: process.env.WW_SiteEndpoint,
-
     managementAPI: process.env.Management_API
 }
