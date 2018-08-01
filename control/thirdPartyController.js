@@ -21,7 +21,7 @@ exports.createUser = async (req, res) => {
         return res.status(200).send({ message: "created successfully", });
     } catch (err) {
         logger("error", "thirdPartyController", `Create User | ${err.message}`);
-        return res.status(500).send({ message: "An error occurred while creating user" });
+        return res.status(500).send({ message: "An error occurred while creating user." });
     }
 }
 

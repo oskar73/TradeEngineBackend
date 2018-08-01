@@ -3,7 +3,6 @@ dotenv.config();
 
 module.exports = {
     port: process.env.PORT || 8000,
-
     database: {
         type: process.env.DB_TYPE || "mysql",
         host: process.env.DB_HOST || "127.0.0.1",
@@ -13,7 +12,6 @@ module.exports = {
         pass: process.env.DB_PASS || "",
         logging: process.env.DB_LOGGING === "true",
     },
-
     siteEndpoint: process.env.WW_SiteEndpoint,
     managementAPI: process.env.Management_API
 }

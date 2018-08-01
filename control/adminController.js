@@ -108,7 +108,7 @@ exports.getSymbols = async (req, res) => {
         return res.status(200).send({ symbols: symbols, assetNames: assetNames });
     } catch (err) {
         console.log(err)
-        return res.status(500).send({ message: 'An error occurred while fetching symbols' });
+        return res.status(500).send({ message: 'An error occurred while fetching symbols.' });
     }
 }
 
