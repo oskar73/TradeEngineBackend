@@ -31,7 +31,6 @@ router.post("/updateCommission", adminmiddleware, adminControl.updateCommission)
 router.post("/createCommission", adminmiddleware, adminControl.createCommission);
 router.post("/deleteCommission", adminmiddleware, adminControl.deleteCommission);
 
-router.get("/getLeverages", adminmiddleware, adminControl.getLeverages);
 router.post("/updateLeverage", adminmiddleware, adminControl.updateLeverage);
 router.post("/createLeverage", adminmiddleware, adminControl.createLeverage);
 router.post("/deleteLeverage", adminmiddleware, adminControl.deleteLeverage);
