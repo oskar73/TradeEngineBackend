@@ -35,6 +35,7 @@ exports.blockUser = async (req, res) => {
         return res.status(500).json("Failed");
     }
 }
+
 exports.createCompany = async (req, res) => {
     try {
         const { email, password, role } = req.body;

@@ -111,6 +111,7 @@ exports.getSymbols = async (req, res) => {
         return res.status(500).send({ message: 'An error occurred while fetching symbols.' });
     }
 }
+
 exports.updateSymbol = async (req, res) => {
     try {
         const { name, type, code, assetName, symbolId } = req.body;
